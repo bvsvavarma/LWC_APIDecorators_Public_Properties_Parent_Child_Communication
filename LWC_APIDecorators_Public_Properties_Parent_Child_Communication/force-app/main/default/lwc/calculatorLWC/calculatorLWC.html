@@ -1,0 +1,60 @@
+<template>
+    <lightning-card title="Calculator" icon-name="utility:activity">
+        <div class="slds-var-p-around_small">
+            <lightning-input 
+                label="Number 1" 
+                onchange={changeHandler}  
+                placeholder="Enter Number 1"  
+                type="number" 
+                name="number1" 
+                value={num1}
+            ></lightning-input>
+            <lightning-input 
+                label="Number 2" 
+                onchange={changeHandler}
+                placeholder="Enter Number 2"  
+                type="number" 
+                name="number2" 
+                value={num2}
+            ></lightning-input>
+        </div>
+        <div class="slds-var-p-around_small">
+            <lightning-button 
+                variant="brand" 
+                label="Add" 
+                name="Addition"
+                onclick={clickHandler}
+                class="slds-var-p-around_small"
+            ></lightning-button>
+            <lightning-button 
+                variant="brand" 
+                label="Sub" 
+                name="Subtraction"
+                onclick={clickHandler}
+                class="slds-var-p-around_small"
+            ></lightning-button>
+            <lightning-button 
+                variant="brand" 
+                label="Mul" 
+                name="Multiplication"
+                onclick={clickHandler}
+                class="slds-var-p-around_small"
+            ></lightning-button>
+            <lightning-button 
+                variant="brand" 
+                label="Div" 
+                name="Division"
+                onclick={clickHandler}
+                class="slds-var-p-around_small"
+            ></lightning-button>
+            <lightning-button 
+                variant="brand" 
+                label="reset" 
+                name="Reset"
+                onclick={clickHandler}
+                class="slds-var-p-around_small"
+            ></lightning-button>
+        </div>
+        Result: {result}
+    </lightning-card>
+</template>

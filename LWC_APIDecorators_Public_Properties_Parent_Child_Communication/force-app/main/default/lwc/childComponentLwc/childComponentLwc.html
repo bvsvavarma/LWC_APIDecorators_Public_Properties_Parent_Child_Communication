@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Child Component">
+        <lightning-formatted-text
+            value={display}
+            class="slds-var-p-around_small"
+        ></lightning-formatted-text>
+        <div>
+            <lightning-formatted-text
+                value={displayGreeting}
+                class="slds-var-p-around_small"
+        ></lightning-formatted-text>
+        </div>
+        <div>
+            <lightning-formatted-text
+                value={user.firstName}
+                class="slds-var-p-around_small"
+        ></lightning-formatted-text>
+        </div>
+        <p class="slds-var-p-around_small">Is User Available: {isUserAvailable}</p>
+    </lightning-card>
+</template>

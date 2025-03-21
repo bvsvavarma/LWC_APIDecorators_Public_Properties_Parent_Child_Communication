@@ -1,0 +1,9 @@
+<template>
+    <!-- Invoking child component (Kebab display) in Parent component-->
+        <c-child-component-lwc 
+            display={greeting}
+            display-greeting="Welcome to Parent to Child Communication"
+            user = {userDetails}
+            is-user-available
+        ></c-child-component-lwc>
+</template>

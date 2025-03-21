@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Generate Full Name" icon-name="utility:person_account">
+        <div class="slds-var-p-around_small">
+            <lightning-input 
+                type="text" 
+                label="Enter First Name"
+                name="fname"
+                onchange={changeHandler}
+            ></lightning-input>
+            <lightning-input 
+                type="text" 
+                label="Enter Last Name"
+                name="lname"
+                onchange={changeHandler}
+            ></lightning-input>
+        </div>
+        <div>
+            <lightning-button 
+                variant="brand" 
+                label="Generate Full Name" 
+                title="Generate Full Name" 
+                onclick={handleClick} 
+                class="slds-var-p-around_small"
+            ></lightning-button>
+        </div>
+        Full Name: {fullName}
+    </lightning-card>
+</template>
