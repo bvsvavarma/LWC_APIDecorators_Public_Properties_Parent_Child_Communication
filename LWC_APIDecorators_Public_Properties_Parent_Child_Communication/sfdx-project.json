@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "LWC_APIDecorators_Public_Properties_Parent_Child_Communication",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "61.0"
+}
